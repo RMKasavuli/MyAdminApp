@@ -1,35 +1,23 @@
 ﻿using System.Web.Optimization;
 
-namespace WebApplication
+namespace MyAdmin
 {
     public class BundleConfig
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
             RegisterLayout(bundles);
-
             RegisterShared(bundles);
-
             RegisterAccount(bundles);
-
             RegisterHome(bundles);
-
             RegisterCharts(bundles);
-
             RegisterWidgets(bundles);
-
             RegisterElements(bundles);
-
             RegisterForms(bundles);
-
             RegisterTables(bundles);
-
             RegisterCalendar(bundles);
-
             RegisterMailbox(bundles);
-
             RegisterExamples(bundles);
-
             RegisterDocumentation(bundles);
         }
 

@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace WebApplication.Controllers
+namespace MyAdmin.Controllers
 {
     public class FormsController : Controller
     {

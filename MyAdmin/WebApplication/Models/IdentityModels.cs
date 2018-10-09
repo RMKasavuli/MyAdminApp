@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
-namespace WebApplication.Models
+namespace MyAdmin.Models
 {
     public class CustomIdentityUser : IdentityUser
     {
@@ -16,8 +16,8 @@ namespace WebApplication.Models
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
             var userIdentity = await manager.CreateIdentityAsync(this, DefaultAuthenticationTypes.ApplicationCookie);
 
-            userIdentity.AddClaim(new Claim("WebApplication.Models.RegisterViewModel.NameIdentifier", NameIdentifier));
-            userIdentity.AddClaim(new Claim("WebApplication.Models.RegisterViewModel.Email", Email));
+            userIdentity.AddClaim(new Claim("MyAdmin.Models.RegisterViewModel.NameIdentifier", NameIdentifier));
+            userIdentity.AddClaim(new Claim("MyAdmin.Models.RegisterViewModel.Email", Email));
 
             return userIdentity;
         }

@@ -5,9 +5,9 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using WebApplication.Models;
+using MyAdmin.Models;
 
-namespace WebApplication.Controllers
+namespace MyAdmin.Controllers
 {
     public class AccountController : Controller
     {

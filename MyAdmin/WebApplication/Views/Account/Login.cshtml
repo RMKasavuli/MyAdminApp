@@ -1,4 +1,4 @@
-﻿@model WebApplication.Models.LoginViewModel
+﻿@model MyAdmin.Models.LoginViewModel
 @{
     Layout = null;
     ViewBag.Title = "Log in";
@@ -9,7 +9,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>WebApplication</title>
+    <title>MyAdmin</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
     @Styles.Render("~/AdminLTE/bootstrap/css")
@@ -28,7 +28,7 @@
 <body class="hold-transition login-page">
     <div class="login-box">
         <div class="login-logo">
-            <a href="@Url.Action("DashboardV1", "Home")">Welcome to <b>WebApplication!</b></a>
+            <a href="@Url.Action("DashboardV1", "Home")">Welcome to <b>MyAdmin!</b></a>
         </div>
         <div class="login-box-body">
             <p class="login-box-msg">Sign in to start your session</p>
